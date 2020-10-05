@@ -7,6 +7,9 @@ LABEL maintainer="Alain Hélaïli <helaili@github.com>"
 
 RUN apk add --no-cache git build-base
 
+# Add imagemagick
+RUN apk --update add imagemagick
+
 # debug
 RUN bundle version
 
